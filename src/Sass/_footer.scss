@@ -1,0 +1,250 @@
+.footer-container {
+    padding: 60px 60px 30px;
+
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 60px 60px;
+        margin-bottom: 60px;
+
+
+        &-item {
+            padding: 60px;
+            background-image:
+                repeating-linear-gradient(-74deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 1px, transparent 0, transparent 4px),
+                repeating-linear-gradient(-74deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 1px, transparent 0, transparent 4px);
+            background-position: center top, center bottom;
+            background-size: 100% 20px;
+            background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+
+            & h3 {
+                font-family: $title-font;
+                font-size: 45px;
+                font-weight: normal;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+            & a {
+                @include button-principal;
+                width: 100%;
+                max-width: 180px;
+                display: inline-block;
+                margin: 0 auto;
+                
+
+                &:hover {
+                    @include button-principal__hover;
+                }
+            }
+        }
+    }
+
+    & .rrss-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 60px 60px;
+        margin-bottom: 60px;
+
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 55px;
+            height: 100%;
+            position: relative;
+
+            background-image: linear-gradient(90deg, #000 50%, transparent 0),
+                linear-gradient(90deg, #000 50%, transparent 0),
+                linear-gradient(180deg, #000 50%, transparent 0),
+                linear-gradient(180deg, #000 50%, transparent 0);
+            background-position: 0 0, 0 100%, 0 0, 100% 0;
+            background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+            background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+            animation-play-state: paused;
+
+            &:hover {
+                animation: item .4s infinite normal;
+                animation-timing-function: linear;
+            }
+
+            & svg {
+                width: 29px;
+                height: 29px;
+                margin: 0 auto 15px;
+            }
+
+            p {
+                font-family: $text-font;
+                font-size: 14px;
+                font-weight: 400;
+                width: 120px;
+                text-align: center;
+            }
+        }
+    }
+
+    & .email-container {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &__item {
+            display: flex;
+            padding: 30px 60px;
+            justify-content: space-between;
+
+            background-image: linear-gradient(90deg, #000 50%, transparent 0),
+                linear-gradient(90deg, #000 50%, transparent 0),
+                linear-gradient(180deg, #000 50%, transparent 0),
+                linear-gradient(180deg, #000 50%, transparent 0);
+            background-position: 0 0, 0 100%, 0 0, 100% 0;
+            background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+            background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+            height: 100%;
+            animation-play-state: paused;
+            position: relative;
+
+            &:hover {
+                animation: item .4s infinite normal;
+                animation-timing-function: linear;
+            }
+
+            & span {
+                font-family: $text-font;
+                font-size: 22px;
+                margin-right: 60px;
+                display: block;
+                width: 100%;
+                max-width: 260px;
+            }
+            & .mobile-only {
+                display: none;
+            }
+
+            & form {
+                width: 100%;
+                max-width: 680px;
+                position: relative;
+
+                & input[type=text] {
+                    width: 100%;
+                    border: 1px solid #000;
+                    padding: 20px 30px;
+                    font-size: 14px;
+                    font-family: $text-font;
+                    background: transparent;
+                    &::placeholder {
+                        color: #000;
+                    }
+                }
+
+                & input[type=submit] {
+                    position: absolute;
+                    opacity: 0;
+                    right: 12px;
+                    top: 20px;
+                    z-index: 1;
+                    cursor: pointer;
+                }
+
+                &::after {
+                    content: "\2192";
+                    position: absolute;
+                    right: 30px;
+                    top: 13px;
+                    font-size: 24px;
+                    color: #000;
+
+                }
+            }
+        }
+    }
+
+    & .legal-container {
+        padding: 50px 0 0;
+        font-family: $text-font;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-around;
+
+        & p {
+            width: 60%;
+            letter-spacing: -1px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        padding: 30px;
+
+        &__row {
+            grid-gap: 30px 30px;
+
+            &-item {
+                padding: 42px 0;
+                background-size: 100% 12px, 100% 12px;
+
+                & h3 {
+                    font-size: 24px;
+                    line-height: 27px;
+                    max-width: calc(100% - 60px);
+                    margin: 0 auto 25px;
+                }
+
+                & a {
+                    padding: 20px;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        & .rrss-row {
+            grid-gap: 30px 30px;
+            grid-template-columns: 1fr;
+            &__item {
+                padding: 30px;
+               
+            }
+        }
+        & .email-container {
+            &__item {
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+                align-items: center;
+                & span {
+                    display: none;
+                }
+                & svg {
+                    width: 43px;
+                    height: 30px;
+                    margin-bottom: 10px;
+                }
+                & .mobile-only {
+                    text-align: center;
+                    display: block;
+                    font-family: $text-font;
+                    font-size: 14px;
+                }
+                & form {
+                    margin-top: 15px;
+                }
+            }
+        }
+        & .legal-container {
+            flex-direction: column;
+            padding: 30px 10px 30px;
+            font-size: 10px;
+            & p {
+                width: 100%;
+            }
+        }
+    }
+}

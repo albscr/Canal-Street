@@ -1,0 +1,120 @@
+.main {
+    background-color: rgb(246, 68, 68);
+    margin-left: 120px;
+    width: calc(100% - 180px);
+    position: relative;
+
+    & .retail {
+        padding: 180px 60px 60px;
+
+        & .hero {
+            margin-bottom: 100px;
+            position: relative;
+
+            &-info {
+                @include infoStyles;
+            }
+        }
+
+        &-content {
+            display: flex;
+
+            &__left {
+                width: 100%;
+
+                & span {
+                    @include verticalSpan;
+
+                    &::after {
+                        position: absolute;
+                        content: "\21E3";
+                        color: #000;
+                        font-size: 24px;
+                        bottom: -8px;
+                        transform: rotate(-90deg);
+                        right: -20px;
+                    }
+                }
+
+                & h1 {
+                    font-family: $title-font;
+                    font-size: 200px;
+                    line-height: 190px;
+                    color: #000;
+                    letter-spacing: 0;
+                }
+            }
+
+            &__right {
+                width: 415px;
+                min-width: 415px;
+                position: relative;
+                padding-top: 115px;
+                margin-bottom: 70px;
+
+                & span {
+                    position: absolute;
+                    top: 75px;
+                    right: 0;
+                    font-family: $text-font;
+                    font-size: 60px;
+                    color: #000;
+                    z-index: 1;
+                }
+
+                & img {
+                    right: 35px;
+                    width: 100%;
+                    max-width: 378px;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}
+
+.second {
+    transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        & .retail {
+            padding: 100px 30px 40px 30px;
+
+            & .hero {
+                padding-top: 110px;
+                margin-bottom: 20px;
+
+                &-info {
+                    top: 0;
+                }
+            }
+
+            &-content {
+                flex-direction: column;
+
+                &__left {
+                    & span {
+                        display: none;
+                    }
+
+                    & h1 {
+                        font-size: 60px;
+                        line-height: 65px;
+                        margin-bottom: 20px;
+                    }
+                }
+                &__right {
+                    width: 100%;
+                    min-width: auto;
+                    padding-top: 0;
+                    & span {
+                        top: auto;
+                        bottom: -35px;
+                    }
+                }
+            }
+        }
+    }
+}

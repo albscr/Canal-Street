@@ -1,0 +1,244 @@
+.container {
+    background-color: #5ea3ec;
+    margin-left: 60px;
+    width: calc(100% - 180px);
+    position: relative;
+}
+
+.food-container {
+    padding: 180px 60px 60px;
+
+
+    & .hero {
+        margin-bottom: 100px;
+        position: relative;
+
+        &-info {
+            @include infoStyles;
+        }
+
+        &-content {
+            display: flex;
+
+            &__left {
+                width: 100%;
+
+                & span {
+                    @include verticalSpan;
+
+                    &::after {
+                        position: absolute;
+                        content: "\21E3";
+                        color: #000;
+                        font-size: 24px;
+                        bottom: -8px;
+                        transform: rotate(-90deg);
+                        right: -20px;
+                    }
+                }
+
+                & h1 {
+                    font-family: $title-font;
+                    font-size: 200px;
+                    line-height: 190px;
+                    color: #000;
+                    letter-spacing: 0;
+                }
+            }
+
+            &__right {
+                width: 415px;
+                min-width: 415px;
+                position: relative;
+                padding-top: 115px;
+                margin-bottom: 70px;
+
+                & span {
+                    position: absolute;
+                    top: 75px;
+                    right: 0;
+                    font-family: $text-font;
+                    font-size: 60px;
+                    color: #000;
+                    z-index: 1;
+                }
+
+                & img {
+                    right: 35px;
+                    width: 100%;
+                    max-width: 378px;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+
+}
+
+.content {
+    margin-bottom: 80px;
+
+    & .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 60px;
+    }
+
+    &-item {
+        & span {
+            position: relative;
+            font-family: $text-font;
+            font-size: 16px;
+            color: #000;
+            display: block;
+            margin-bottom: 30px;
+            z-index: 1;
+        }
+
+        & h3 {
+            position: relative;
+            font-family: $title-font;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0;
+            color: #000;
+            z-index: 1;
+        }
+    }
+}
+
+.announcement {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    align-items: center;
+    padding: 110px 0;
+    // margin-bottom: 100px;
+
+    background-image: repeating-linear-gradient(-45deg, #000, #000 1px, transparent 0, transparent 68px),
+        repeating-linear-gradient(45deg, #000, #000 1px, transparent 0, transparent 68px),
+        repeating-linear-gradient(-45deg, #000, #000 1px, transparent 0, transparent 71px),
+        repeating-linear-gradient(45deg, #000, #000 1px, transparent 0, transparent 70px);
+    background-position: 0 101%, 0 101%, 0 0, 0 0;
+    background-size: 93px 50px, 93px 50px, 100px 50px, 100px 50px;
+    background-repeat: repeat-x;
+    animation: 2s infinite normal annoucement;
+    animation-timing-function: linear;
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & .first {
+            animation-delay: .5s;
+
+        }
+
+        & svg,
+        img {
+            width: 177px;
+            height: 180px;
+            animation: 1s infinite alternate svg;
+            animation-timing-function: ease-in-out;
+        }
+
+        & h2 {
+            font-family: $title-font;
+            font-size: 100px;
+            line-height: 100px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        & p {
+            font-family: $text-font;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        animation: none;
+        width: 100%;
+
+    }
+
+    .food-container {
+        padding: 100px 30px 40px 30px;
+
+        & .hero {
+            padding-top: 110px;
+            margin-bottom: 20px;
+
+            &-info {
+                top: 0;
+            }
+
+            &-content {
+                flex-direction: column;
+
+                &__left {
+                    & span {
+                        display: none;
+                    }
+
+                    & h1 {
+                        font-size: 60px;
+                        line-height: 65px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                &__right {
+                    width: 100%;
+                    min-width: auto;
+                    padding-top: 0;
+
+                    & span {
+                        top: auto;
+                        bottom: -35px;
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        & .grid {
+            grid-template-columns: 1fr;
+            grid-row-gap: 30px;
+        }
+
+        & span {
+            margin-bottom: 10px;
+        }
+    }
+
+    .announcement {
+        padding: 60px 0;
+        grid-template-columns: 1fr;
+        grid-row-gap: 60px;
+        background-image: repeating-linear-gradient(-45deg, #000, #000 1px, transparent 0, transparent 20px), repeating-linear-gradient(45deg, #000, #000 1px, transparent 0, transparent 20px), repeating-linear-gradient(-45deg, #000, #000 1px, transparent 0, transparent 20px), repeating-linear-gradient(45deg, #000, #000 1px, transparent 0, transparent 20px);
+        background-position: 0 102%, 0 102%, 0 0, 0 0;
+        background-size: 29px 14px, 29px 14px, 29px 14px, 29px 14px;
+
+        &-item {
+
+            & svg,
+            img {
+                width: 90px;
+                height: 90px;
+            }
+
+            & h2 {
+                font-size: 60px;
+                line-height: 65px;
+            }
+
+        }
+    }
+}
