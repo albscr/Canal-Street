@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Canal Street Market
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="1470" alt="image" src="https://user-images.githubusercontent.com/108294869/235331857-cfd50c9f-36bb-44cf-8e07-c222526031f3.png">
 
-## Available Scripts
+## Description
+### Objectives
+#### Recreate this to learn:
 
-In the project directory, you can run:
+<ul>
+  <li>Unique layout</li>
+  <li>Hover animations</li>
+  <li>Typography choices</li>
+  <li>Responsive Design</li>
+  <li>Configuring a navigation router to build a multipage application</li>
+  <li>Working with CSS Grid and Flexbox for page design</li>
+</ul>
 
-### `npm start`
+### Functionality
+<p>- Integration with social networks: Add the ability to share products on social networks so that users can share their favorite products with friends and followers. </p>
+<p>- Newsletter subscription: Allow users to subscribe to newsletters to receive updates on new products, special offers and promotions. </p>
+<p>- Promotion of products and events </p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Characteristics
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<ol> 
+<li>Modern and attractive design: The design of the website is modern and attractive, with a vibrant color palette and a carefully thought-out layout of elements.</li>
 
-### `npm test`
+<li>Intuitive navigation: The website features clear and intuitive navigation, making it easy for users to find what they are looking for.</li>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<li>Interactivity: The website includes interactive elements, such as animations and scrolling effects, which helps keep users involved and engaged.</li>
 
-### `npm run build`
+<li>Responsive: The website is designed to be responsive, which means it automatically adapts to different screen sizes and devices.</li>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<li>Clearly defined sections: The different sections of the website are clearly defined, making it easy to understand the structure and content of the page.</li>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<li>Detailed product and event information: The website includes detailed information about the products and events offered at Canal Street Market, which helps users make informed decisions about what they want to buy or attend.</li>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<li>Social media integration: The website integrates with social media, making it easy to share information about products and events with friends and followers.</li>
+</ol>
 
-### `npm run eject`
+## Contribution
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Anyone can contribute to this project in several ways, such as:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<ul>
+<li>Fixing errors or bugs: If you find an error or some unexpected behavior in the application, please create an issue in the repository so that the developers can review it.</li>
+<li>Improving functionality: If you have an idea to improve the functionality of the application, you can make a proposal through an issue or create a pull request with your proposed changes.</li>
+<li>Implementation of new features: If you want to add a new feature to the application, you can propose it through an issue and then create a pull request with the corresponding changes.</li>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Bug reporting
+If you find any problem or bug in the application, please create an issue in the repository with the details of the problem and, if possible, how to reproduce it. The developers will review the issue and work to fix it as soon as possible. If you have any questions or concerns, you can also ask them through an issue.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Credits
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Live](https://canalstreet.market/) --> Link to page I recreated 
+<br />
+Fotos: [Unsplash](https://unsplash.com/es)
+<br/>
+Icons: [FontAwsome](https://fontawesome.com/)
+## Contact
