@@ -1,9 +1,24 @@
-# Canal Street Market
+# [Canal Street Market](https://canal-street-kappa.vercel.app/)
+
 
 <img width="1470" alt="image" src="https://user-images.githubusercontent.com/108294869/235331857-cfd50c9f-36bb-44cf-8e07-c222526031f3.png">
 
 ## Description
+<p>
+This project is a recreation of the website of Canal Street Market, a shopping and food space located in New York City. The site features a modern and elegant design, combining high quality photography with carefully selected typography and graphic elements.
+</p>
+<p>
+In this project, <b>React JS and Sass</b> have been used to replicate the look and functionality of the original website. Users can explore the different shopping and dining spaces, view details of each business, learn about opening and closing times, and get information about available events and promotions.
+</p>
+<p>
+In addition, a credits section has been included thanking the sources used to create the project. It also details how users can contribute to the project, report bugs or problems, and how developers can address them.
+</p>
+
 ### Objectives
+<p>
+In recreating the Canal Street Market website, my main goal was to improve my skills in CSS animations using the Framer Motion library, and also to work with the latest version of React Router, which is version 6. In addition, I wanted to improve my knowledge and experience in implementing styles with Sass, and learn new techniques for responsive web design. Through this project, I also hoped to improve my skills in building components and structuring the architecture of my project in a clean and efficient way. With these goals in mind, I sought to create a functional and aesthetically appealing version of the Canal Street Market website that could be useful as a model for future projects.
+</p>
+
 #### Recreate this to learn:
 
 <ul>
@@ -57,4 +72,18 @@ If you find any problem or bug in the application, please create an issue in the
 Fotos: [Unsplash](https://unsplash.com/es)
 <br/>
 Icons: [FontAwsome](https://fontawesome.com/)
+<br/>
+Material UI: [MUI](https://mui.com/)
+<br/>
+Animations: 
+<br/>[React Spring](https://www.react-spring.dev/) 
+<br/>[Framer Motion](https://www.framer.com/motion/?utm_source=google&utm_medium=adwords&utm_campaign=TW-WW-All-GS-UA-Traffic-20190326-Brand.Bmm_&gad=1&gclid=CjwKCAjwo7iiBhAEEiwAsIxQEWBKaZAlq_1_cl7_4_WF45letX8VjjfOxaoyJcglHFnIspV_FkeMlRoCx24QAvD_BwE)
+<br/>[React Intersection Observer](https://www.npmjs.com/package/react-intersection-observer)
 ## Contact
+For any questions or information please contact me: 
+<br/>
+Project developer: [Alba Arenas](https://github.com/albscr)
+<br/>
+[Web Page](https://alba-arenas-portfolio.vercel.app/)
+<br/>
+[Linkedin](https://www.linkedin.com/in/albaarenasnavarro/) 
