@@ -87,3 +87,7 @@ Project developer: [Alba Arenas](https://github.com/albscr)
 [Web Page](https://alba-arenas-portfolio.vercel.app/)
 <br/>
 [Linkedin](https://www.linkedin.com/in/albaarenasnavarro/) 
+  
+  
+  <img width="736" alt="image" src="https://github.com/albscr/Canal-Street/assets/108294869/7088183e-5cc0-4680-99c8-3da8573f5976">
+
