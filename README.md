@@ -88,6 +88,7 @@ Project developer: [Alba Arenas](https://github.com/albscr)
 <br/>
 [Linkedin](https://www.linkedin.com/in/albaarenasnavarro/) 
   
+  <img width="1468" alt="image" src="https://github.com/albscr/Canal-Street/assets/108294869/e36ac5ab-6476-4d93-9882-797e546e83af">
+
   
-  <img width="736" alt="image" src="https://github.com/albscr/Canal-Street/assets/108294869/7088183e-5cc0-4680-99c8-3da8573f5976">
 
