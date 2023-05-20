@@ -61,7 +61,7 @@ Anyone can contribute to this project in several ways, such as:
 <li>Fixing errors or bugs: If you find an error or some unexpected behavior in the application, please create an issue in the repository so that the developers can review it.</li>
 <li>Improving functionality: If you have an idea to improve the functionality of the application, you can make a proposal through an issue or create a pull request with your proposed changes.</li>
 <li>Implementation of new features: If you want to add a new feature to the application, you can propose it through an issue and then create a pull request with the corresponding changes.</li>
-
+</ul>
 ### Bug reporting
 If you find any problem or bug in the application, please create an issue in the repository with the details of the problem and, if possible, how to reproduce it. The developers will review the issue and work to fix it as soon as possible. If you have any questions or concerns, you can also ask them through an issue.
 
