@@ -3,6 +3,7 @@
     margin-left: 180px;
     width: calc(100% - 180px);
     position: relative;
+    overflow-x: hidden;
 
     & .footer-container {
         padding: 0;

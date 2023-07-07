@@ -1028,6 +1028,10 @@ header a {
 }
 
 @media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+    margin: 0;
+  }
   .main .retail {
     padding: 100px 30px 40px 30px;
   }
@@ -1064,6 +1068,7 @@ header a {
   margin-left: 180px;
   width: calc(100% - 180px);
   position: relative;
+  overflow-x: hidden;
 }
 .community-section .footer-container {
   padding: 0;

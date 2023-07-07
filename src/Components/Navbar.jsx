@@ -22,13 +22,22 @@ function Navbar() {
 
   const handleNavClick = (page) => {
     setActivePage(page);
+    const pageWidth = window.innerWidth;
+    const multiplier = 0.833;
 
     if (page === "food") {
       setNavPositions({ food: 0, retail: 0, community: 0 });
     } else if (page === "retail") {
-      setNavPositions({ food: -1230, retail: 0, community: 0 });
+      const retailPosition = -(pageWidth * multiplier);
+      setNavPositions({ food: retailPosition, retail: 0, community: 0 });
     } else if (page === "community") {
-      setNavPositions({ food: -1230, retail: -1230, community: 0 });
+      const retailPosition = -(pageWidth * multiplier);
+      const communityPosition = -(pageWidth * multiplier);
+      setNavPositions({
+        food: retailPosition,
+        retail: communityPosition,
+        community: 0,
+      });
     }
   };
 
@@ -128,8 +137,7 @@ function Navbar() {
 
         <div className={`mobile-nav__content${!visible ? "--active" : ""}`}>
           <div className="blocks">
-            <a href="/" className="block" onClick={handleToggleClick}
-            >
+            <a href="/" className="block" onClick={handleToggleClick}>
               <span>About</span>
             </a>
             <a href="/#/food" className="block" onClick={handleToggleClick}>
